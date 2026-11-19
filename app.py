@@ -55,24 +55,24 @@ ABAS_POR_CARACTERISTICA = {
         ("Polinoso",  "Mesonoto fosco polinoso",   OBS / "8mesonoto_brilho_fosco" / "fosco_polinoso.jpg"),
     ],
     "faixas tergitos fêmeas (espessura e coloração)": [
-        ("Finas e claras",   "Faixas dos tergitos finas e claras",   OBS / "9faixas_tergitos_femeas" / "finas_e_claras.jpg"),
-        ("Finas e escuras",  "Faixas dos tergitos finas e escuras",  OBS / "9faixas_tergitos_femeas" / "finas_e_escuras.jpg"),
-        ("Grossas e escuras","Faixas dos tergitos grossas e escuras", OBS / "9faixas_tergitos_femeas" / "grossas_e_escuras.jpg"),
+        ("Finas e claras",    "Faixas dos tergitos finas e claras",    OBS / "9faixas_tergitos_femeas" / "finas_claras.jpg"),
+        ("Finas e escuras",   "Faixas dos tergitos finas e escuras",   OBS / "9faixas_tergitos_femeas" / "finas_escuras.jpg"),
+        ("Grossas e escuras", "Faixas dos tergitos grossas e escuras", OBS / "9faixas_tergitos_femeas" / "grossas_escuras.jpg"),
     ],
     "coloração escura últimos tergitos (macho)": [
-        ("Com coloração", "Com coloração escura no último tergito (macho)", OBS / "10coloracao_escura_tergitos_macho" / "com_coloracao_escura_ultimo_tergito.jpg"),
-        ("Sem coloração", "Sem coloração escura no último tergito (macho)", OBS / "10coloracao_escura_tergitos_macho" / "sem_coloracao_escura_ultimo_tergito.jpg"),
+        ("Com coloração", "Presença de coloração escura no último tergito (macho)", OBS / "10coloracao_escura_tergitos_macho" / "presenca_coloracao_escura_ultimo_tergito_macho.jpg"),
+        ("Sem coloração", "Ausência de coloração escura no último tergito (macho)", OBS / "10coloracao_escura_tergitos_macho" / "ausencia_coloracao_escura_ultimo_tergito_macho.jpg"),
     ],
     "faixas tergitos interrompidas": [
-        ("Não interrompidas", "Faixas abdominais dos tergitos não interrompidas no meio", OBS / "11faixas_tergitos_interrompidas" / "faixas_abdominais_dos_tergitos_nao_interrompidas_no_meio.jpg"),
-        ("Interrompidas",     "Faixas dos tergitos interrompidas ao meio",               OBS / "11faixas_tergitos_interrompidas" / "faixas_interrompidas_ao_meio.jpg"),
+        ("Não interrompidas", "Faixas do tergito não interrompidas ao meio", OBS / "11faixas_tergitos_interrompidas" / "Faixas_do_tergito_nao_interrompidas_ao_meio.jpg"),
+        ("Interrompidas",     "Faixas do tergito interrompidas ao meio",     OBS / "11faixas_tergitos_interrompidas" / "Faixas_do_tergito_interrompidas_ao_meio.jpg"),
     ],
     "mancha nos últimos  tergitos macho": [
-        ("Com mancha", "Mancha no último tergito do macho",    OBS / "12mancha_tergitos_macho" / "mancha_no_ultimo_tergito_do_macho.jpg"),
-        ("Sem mancha", "Sem mancha no último tergito do macho", OBS / "12mancha_tergitos_macho" / "sem_mancha_no_ultimo_tergito_do_macho.jpg"),
+        ("Com mancha", "Mancha no último tergito do macho",            OBS / "12mancha_tergitos_macho" / "mancha_do_ultimo_tergito.jpg"),
+        ("Sem mancha", "Ausência de mancha no último tergito do macho", OBS / "12mancha_tergitos_macho" / "ausencia_mancha_do_ultimo_tergito.jpg"),
     ],
     "mancha nos últimos  tergitos fêmea": [
-        ("Com mancha", "Mancha no último tergito da fêmea",    OBS / "13mancha_tergitos_femeas" / "mancha_no_ultimo_tergito_femea.jpg"),
+        ("Com mancha", "Mancha no último tergito da fêmea",     OBS / "13mancha_tergitos_femeas" / "presenca_mancha_do_ultimo_tergito_femea.jpg"),
         ("Sem mancha", "Sem mancha no último tergito da fêmea", OBS / "13mancha_tergitos_femeas" / "sem_mancha_no_ultimo_tergito_femea.jpg"),
     ],
     "presença de tubérculo proeminente na superfície externa do fêmur das pernas anteriores": [
@@ -80,9 +80,9 @@ ABAS_POR_CARACTERISTICA = {
         ("Ausente",  "Ausência de tubérculo no fêmur anterior",             OBS / "5tuberculo_femur" / "ausencia_de_tuberculo_femoral.jpg"),
     ],
     "aspecto da asa": [
-        ("Hialina",         "Asa hialina (transparente)",         OBS / "14veias_enfumacadas" / "sem_veia_enfumacada.jpg"),
-        ("Veia enfumaçada", "Veias transversais enfumaçadas",     OBS / "14veias_enfumacadas" / "veia_enfumacada.jpg"),
-        ("Mancha no macho", "Mancha na asa do macho",             OBS / "14veias_enfumacadas" / "veia_enfumacada.jpg"),
+        ("Hialina",         "Asa hialina (transparente)",     OBS / "14veias_enfumacadas" / "asa_hialina.jpg"),
+        ("Veia enfumaçada", "Veias transversais enfumaçadas", OBS / "14veias_enfumacadas" / "veia_enfumacada.jpg"),
+        ("Mancha no macho", "Mancha na asa do macho",         OBS / "14veias_enfumacadas" / "mancha_na_asa.jpg"),
     ],
 }
 
