@@ -31,22 +31,28 @@ ABAS_POR_CARACTERISTICA = {
         ("Ausentes",  "Sem cerdas cuneiformes no fêmur",                            OBS / "4c_cuneiformis" / "4_sem_cerdas_cuneiformes_no_femur.jpg"),
     ],
     "pentes sexuais": [
-        ("Presentes",    "Pentes sexuais presentes",                              OBS / "5pentes_sexuais" / "5_pentes_sexuais.jpg"),
+        ("Presentes", "Pentes sexuais presentes",  OBS / "5pentes_sexuais" / "presenca_de_pentes_sexuais.png"),
+        ("Ausentes",  "Ausência de pentes sexuais", OBS / "5pentes_sexuais" / "ausencia_de_pentes_sexuais.png"),
         ("Distribuídos", "Pentes sexuais distribuídos ao longo dos tarsos do macho", OBS / "5pentes_sexuais" / "5_pentes_sexuais_distribuidos_ao_longo_dos_tarsos_do_macho.jpg"),
     ],
     "indice costal": [
         ("Referência", "Índice costal — referência de medição", OBS / "6i_costal" / "6_indice_costal..jpg"),
     ],
     "mesonoto cor": [
-        ("Castanho mel",    "Mesonoto castanho mel",                OBS / "7mesonoto_cor" / "Castanho_mel.jpg"),
-        ("Faixas brancas",  "Mesonoto com faixas brancas longitudinais", OBS / "7mesonoto_cor" / "Faixas_brancas_longitudinais.png"),
-        ("Castanho escuro", "Mesonoto castanho escuro",             OBS / "7mesonoto_cor" / "castanho_escuro.jpg"),
-        ("Pintas",          "Mesonoto com pintas individualizadas", OBS / "7mesonoto_cor" / "pintas_individualizadas.jpg"),
+        ("Castanho mel",         "Mesonoto castanho mel",                                    OBS / "7mesonoto_cor" / "mesonoto_castanho_mel.jpg"),
+        ("Castanho",             "Mesonoto castanho",                                        OBS / "7mesonoto_cor" / "mesonoto_castanho.jpg"),
+        ("Castanho claro",       "Mesonoto castanho claro",                                  OBS / "7mesonoto_cor" / "mesonoto_castanho_claro.jpg"),
+        ("Castanho escuro",      "Mesonoto castanho escuro",                                 OBS / "7mesonoto_cor" / "castanho_escuro.jpg"),
+        ("Marrom escuro",        "Mesonoto marrom escuro",                                   OBS / "7mesonoto_cor" / "marrom_escuro.jpg"),
+        ("Pintas individualizadas", "Mesonoto castanho com pintas individualizadas",         OBS / "7mesonoto_cor" / "castanho_pintas_individualizadas.jpg"),
+        ("Fundo claro pintas",   "Mesonoto fundo claro com pintas individualizadas",         OBS / "7mesonoto_cor" / "fundo_claro_pintas_individualizadas.jpg"),
+        ("Faixas individualizadas", "Mesonoto com faixas individualizadas",                  OBS / "7mesonoto_cor" / "faixas_individualizadas.jpg"),
+        ("Faixas brancas",       "Mesonoto com faixas brancas contornadas por faixas pretas", OBS / "7mesonoto_cor" / "faixas_brancas_contornadas_por_faixas_longitudinas_pretas.jpg"),
     ],
     "mesonoto brilho/fosco": [
-        ("Brilhante", "Mesonoto brilhante",  OBS / "8mesonoto_brilho_fosco" / "mesonoto_brilho.jpg"),
-        ("Fosco",     "Mesonoto fosco",      OBS / "8mesonoto_brilho_fosco" / "mesonoto_fosco.jpg"),
-        ("Polinoso",  "Mesonoto polinoso",   OBS / "8mesonoto_brilho_fosco" / "mesonoto_polinoso.jpg"),
+        ("Brilhante", "Mesonoto brilhante",        OBS / "8mesonoto_brilho_fosco" / "brilhante.jpg"),
+        ("Fosco",     "Mesonoto fosco",            OBS / "8mesonoto_brilho_fosco" / "fosco.jpg"),
+        ("Polinoso",  "Mesonoto fosco polinoso",   OBS / "8mesonoto_brilho_fosco" / "fosco_polinoso.jpg"),
     ],
     "faixas tergitos fêmeas (espessura e coloração)": [
         ("Finas e claras",   "Faixas dos tergitos finas e claras",   OBS / "9faixas_tergitos_femeas" / "finas_e_claras.jpg"),
@@ -69,6 +75,10 @@ ABAS_POR_CARACTERISTICA = {
         ("Com mancha", "Mancha no último tergito da fêmea",    OBS / "13mancha_tergitos_femeas" / "mancha_no_ultimo_tergito_femea.jpg"),
         ("Sem mancha", "Sem mancha no último tergito da fêmea", OBS / "13mancha_tergitos_femeas" / "sem_mancha_no_ultimo_tergito_femea.jpg"),
     ],
+    "presença de tubérculo proeminente na superfície externa do fêmur das pernas anteriores": [
+        ("Presente", "Presença de tubérculo proeminente no fêmur anterior", OBS / "5tuberculo_femur" / "presenca_de_tuberculo_femoral.jpg"),
+        ("Ausente",  "Ausência de tubérculo no fêmur anterior",             OBS / "5tuberculo_femur" / "ausencia_de_tuberculo_femoral.jpg"),
+    ],
     "aspecto da asa": [
         ("Hialina",         "Asa hialina (transparente)",         OBS / "14veias_enfumacadas" / "sem_veia_enfumacada.jpg"),
         ("Veia enfumaçada", "Veias transversais enfumaçadas",     OBS / "14veias_enfumacadas" / "veia_enfumacada.jpg"),
@@ -79,9 +89,7 @@ ABAS_POR_CARACTERISTICA = {
 FOTOS_REFERENCIA = set(ABAS_POR_CARACTERISTICA.keys())
 
 # Características sem foto ainda — exibem botão ⓘ com placeholder
-PLACEHOLDERS_REFERENCIA: set[str] = {
-    "presença de tubérculo proeminente na superfície externa do fêmur das pernas anteriores",
-}
+PLACEHOLDERS_REFERENCIA: set[str] = set()
 
 # ── Grupos crípticos ──────────────────────────────────────────────────────────
 GRUPOS_CRIPTICOS: dict[str, set[str]] = {
@@ -234,6 +242,8 @@ FOTOS_ESPECIES: dict = {
     # Prancha comparativa grupo melanogaster
     "d. melanogaster":     ESP / "Melanogaster_.jpg",
     "d. simulans":         ESP / "Melanogaster_.jpg",
+    # D. pallidipennis
+    "d. pallidipennis":    ESP / "D_pallidipennis.jpg",
     # Prancha subgrupo sturtevanti
     "d. dacunhai":         ESP / "d_sturtevanti.jpg",
     "d. lehrmanae":        ESP / "d_sturtevanti.jpg",
